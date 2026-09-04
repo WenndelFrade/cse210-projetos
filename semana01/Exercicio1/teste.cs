@@ -1,6 +1,6 @@
 using System;
 
-class Program
+class Teste
 {
     static void Main(string[] args)
     {
@@ -10,7 +10,5 @@ class Program
 
         if (nota >= 90)
         {}
-
-
     }
 }
