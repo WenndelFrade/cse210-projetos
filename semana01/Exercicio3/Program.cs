@@ -4,6 +4,30 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Olá, Mundo! Este é o Projeto Exercicio3.");
+        int tentativas = 0;
+        
+        {
+            Random geradorAleatorio = new Random();
+            int numero = geradorAleatorio.Next(1, 50);
+            
+            
+            int palpite;
+            do   
+            {
+                Console.Write("Qual é o seu palpite? ");
+                palpite = int.Parse(Console.ReadLine());
+                tentativas++;
+                if (palpite < numero)
+                {
+                    Console.WriteLine("Mais alto");
+                }
+                else if (palpite > numero)
+                {
+                    Console.WriteLine("Mais baixo");
+                }
+            } while (palpite != numero);
+            Console.WriteLine("Parabéns! Você acertou o número!");
+            Console.WriteLine($"Número de tentativas: {tentativas}");
+        }
     }
 }
