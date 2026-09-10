@@ -2,11 +2,13 @@ using System;
 
 public class Emprego
 {
-    static void Main(string[] args)
+    public string _emprego;
+    public string _cargo;
+    public int _AnoInicial;
+    public int _AnoFinal;
+
+    public void ExibirDetalhesEmprego()
     {
-        string _emprego = "Apple";
-        Console.WriteLine(_emprego);
-        string _emprego1 = "Microsoft";
-        Console.WriteLine(_emprego1);
+        Console.WriteLine($"{_cargo} ({_emprego}) {_AnoInicial} - {_AnoFinal}");
     }
 }
