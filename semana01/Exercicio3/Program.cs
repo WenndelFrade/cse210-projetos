@@ -8,7 +8,7 @@ class Program
         
         {
             Random geradorAleatorio = new Random();
-            int numero = geradorAleatorio.Next(1, 50);
+            int numero = geradorAleatorio.Next(1, 100);
             
             
             int palpite;

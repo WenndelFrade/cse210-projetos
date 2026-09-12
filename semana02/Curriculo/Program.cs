@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        
+// Instancia um emprego        
        
         Emprego emprego = new Emprego();
         emprego._emprego = "Apple";
@@ -12,7 +12,7 @@ class Program
         emprego._AnoInicial = 2019;
         emprego._AnoFinal = 2022;
         
-
+// Instancia outro emprego
 
         Emprego emprego1 = new Emprego();
         emprego1._emprego = "Microsoft";
@@ -20,7 +20,7 @@ class Program
         emprego1._AnoInicial = 2022;
         emprego1._AnoFinal = 2023;
         
-
+// Instancia Curriculo e adiciona os empregos
         Curriculo curriculo = new Curriculo();
         curriculo._membro = "Wenndel";
         curriculo._empregos.Add(emprego);
