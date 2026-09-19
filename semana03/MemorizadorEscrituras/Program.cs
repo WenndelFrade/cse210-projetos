@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Referencia referencia = new Referencia("João", 3, 16);
+        Referencia referencia = new Referencia("Provérbios", 3, 5-6);
 
         Escritura escritura = new Escritura(referencia,"E a Vida Eterna é esta que te conheçam como único Deus Verdadeiro e vivo.");
     
@@ -22,7 +22,7 @@ class Program
         {
             break;
         }
-        escritura.OcultarPalavrasAleatorias(2);
+        escritura.OcultarPalavrasAleatorias(3);
     }
     Console.Clear();
     Console.WriteLine(escritura.ObterTexto());
