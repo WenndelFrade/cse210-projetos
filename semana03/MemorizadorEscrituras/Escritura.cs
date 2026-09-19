@@ -24,7 +24,17 @@ public class Escritura
         Random sorteador = new Random();
         for (int i = 0; i <numeroParaOcultar; i++)
         {
-            int indice = sorteador.Next(_palavras.Count);
+            if (EstaCompletamenteOculta())
+            {
+                break;
+            }
+            int indice;
+            do
+            {
+                indice = sorteador.Next(_palavras.Count);
+            
+            }
+            while (_palavras[indice].Exibir());
             _palavras[indice].Ocultar();
         }
     }
