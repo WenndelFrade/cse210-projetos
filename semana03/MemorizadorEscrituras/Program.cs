@@ -6,7 +6,7 @@ class Program
     {
         Referencia referencia = new Referencia("Provérbios", 3, 5, 6);
 
-        Escritura escritura = new Escritura(referencia,"E a Vida Eterna é esta que te conheçam como único Deus Verdadeiro e vivo.");
+        Escritura escritura = new Escritura(referencia,"Confia no Senhor de todo o teu coração, e não te estribes no teu próprio entendimento. Reconhece-o em todos os teus caminhos, e Ele endireitará as tuas veredas.");
     
 
    
