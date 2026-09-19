@@ -3,12 +3,35 @@ using System;
 
 public class Referencia
 {
-    private string _referenciaEscritura;
+    private string _livro;
+    private int _capitulo;
+    private int _versiculo;
+    private int _ultimoVersiculo;
 
-    public Referencia (string _referenciaEscritura)
+    public Referencia (string livro, int capitulo, int versiculo)
     {
-        string _referenciaEscritura = "E a vida Eterna é esta que te conheçam como único Deus verdadeiro e vivo";
+        _livro = livro;
+        _capitulo = capitulo;
+        _versiculo = versiculo;
     }
 
+    public Referencia (string livro, int capitulo, int primeiroVersiculo, int ultimoVersiculo)
+    {
+        _livro = livro;
+        _capitulo = capitulo;
+        _versiculo = primeiroVersiculo;
+        _ultimoVersiculo = ultimoVersiculo;
+    }
+    public string ObterTexto()
+    {
+        if (_ultimoVersiculo == 0)
+        {
+            return($"{_livro} {_capitulo}:{_versiculo}");
+        }
+        else
+        {
+            return($"{_livro} {_capitulo}:{_versiculo}-{_ultimoVersiculo}");
+        }
+    }
 }
 
