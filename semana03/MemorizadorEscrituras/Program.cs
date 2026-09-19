@@ -8,7 +8,7 @@ class Program
 
         Escritura escritura = new Escritura(referencia,"Confia no Senhor de todo o teu coração, e não te estribes no teu próprio entendimento. Reconhece-o em todos os teus caminhos, e Ele endireitará as tuas veredas.");
     
-
+    
    
       
     while (!escritura.EstaCompletamenteOculta())
