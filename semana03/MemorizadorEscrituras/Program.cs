@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Referencia referencia = new Referencia("Provérbios", 3, 5-6);
+        Referencia referencia = new Referencia("Provérbios", 3, 5, 6);
 
         Escritura escritura = new Escritura(referencia,"E a Vida Eterna é esta que te conheçam como único Deus Verdadeiro e vivo.");
     
